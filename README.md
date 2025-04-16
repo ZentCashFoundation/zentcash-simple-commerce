@@ -1,1 +1,1 @@
-# zentcash-simple-commerce
+# Zent Cash // Simple Commerce
