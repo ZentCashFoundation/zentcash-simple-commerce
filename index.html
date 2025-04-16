@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="Zent Cash | Simple Commerce">
+    <meta name="description" content="Zent Cash is a digital currency that you can spend anywhere. Use Zent Cash to make secure, instant and private payments online or in any store using our secure open source platform hosted by thousands of users worldwide.">
+    <meta name="keywords" content="Zent, Zent Cash, digital currency, secure currency, instant payment, spend anywhere, payment online, private payment, cryptocurrency, wallet, wallet mobile, anonymous transactions, blockchain, e-sports, crypto-games, games-crypto, games, crypto, ecommerce, e-commerce, your bank, your money, for everyone">
+    <meta property="og:title" content="Zent Cash | Simple Commerce">
+    <meta property="og:description" content="Zent Cash is a digital currency that you can spend anywhere. Use Zent Cash to make secure, instant and private payments online or in any store using our secure open source platform hosted by thousands of users worldwide.">
+    <meta property="og:site_name" content="Zent Cash | Simple Commerce">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:type" content="article">
+    <link rel="shortcut icon" href="assets/img/icon/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="assets/img/icon/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/img/icon/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/img/icon/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/img/icon/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/img/icon/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/img/icon/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/img/icon/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/img/icon/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/icon/apple-touch-icon-180x180.png">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/zentcashutils.js"></script>
+    <script src="assets/js/qrcode.min.js"></script>
+    <script src="assets/js/simplecommerce.js"></script>
+    <title>Zent Cash | Simple Commerce</title>
+  </head>
+
+  <body>
+    <h2 class="title-zentcash-commerce">Zent Cash // Simple Commerce</h2>
+    
+    <div class="parent">
+      <div class="div1">
+        <p class="information">
+          This page will automatically scan the blockchain and the tx pool for incoming transactions using the QR code.
+        </p>
+        <p class="information">
+          It's up to you whether to accept unconfirmed transactions or not. It is likely they'll be confirmed in short order, but there is still a possibility they might not, so for larger values you may want to wait for one or more confirmation(s).
+        </p>
+      </div>
+      <div class="div2">
+        <p class="scan-qr-to-pay">Scan the QR to Pay</p>
+        <canvas id="qrcode"></canvas>
+        <p class="integrated-address">Address</p>
+        <div id="integrated-address"></div>
+      </div>
+      <div class="div3">
+        <p class="paymentIdASCII">Payment ID ASCII:</p>
+        <input type="text" id="paymentIdASCII" maxlength="32" placeholder="Your invoice ID"/>
+      </div>
+      <div class="div4">
+        <p class="paymentId">Payment ID:</p>
+        <input type="text" id="paymentId"  maxlength="64" placeholder="Payment ID auto-generated per invoice."/>
+      </div>
+      <div class="div5">
+        <button class="generate" onclick="generate()">Generate</button>  
+      </div>
+    </div>
+
+    <div class="button-settings" onclick="settings()" id="settings"><img src="assets/img/icon/settings.webp" alt="settings"></div>
+
+    <div class="settings">
+      <p class="settings-title">Settings</p>
+      <p class="standard-address">Standard Address:<p>
+      <input type="text" id="address" minlength="97" maxlength="97" placeholder="Ze...." />  
+    </div>
+    
+  </body>
+
+</html>

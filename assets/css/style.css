@@ -1,0 +1,215 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(rgb(255 255 255 / 73%), rgba(0, 0, 0, 0.4)), url(../img/background/background-gold-black-white.webp) no-repeat center center / cover;
+}   
+
+.title-zentcash-commerce{
+    text-align: center;
+    font-size: 2em;
+    color: #1b1b1b;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+.parent {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);    
+    gap: 10px;
+    padding: 10px;
+    min-height: 90vh;
+}
+
+.div1 {
+    grid-column: span 3;
+    grid-row: span 2;
+    border-color: black;
+    border-width: 1px;
+    border-style: dotted;
+    border-radius: 5px;
+    padding: inherit;
+    align-content: center;
+}
+
+.div2 {
+    grid-column: span 2;
+    grid-row: span 4;
+    text-align: center;
+    border-color: black;
+    border-width: 1px;
+    border-style: dotted;
+    border-radius: 5px;
+    padding: inherit;
+}
+
+.div3 {
+    grid-column: span 3;
+    grid-row: span 1;
+    border-color: black;
+    border-width: 1px;
+    border-style: dotted;
+    border-radius: 5px;
+    padding: inherit;
+    align-content: center;
+}
+
+.div4 {
+    grid-column: span 3;
+    grid-row: span 1;
+    border-color: black;
+    border-width: 1px;
+    border-style: dotted;
+    border-radius: 5px;
+    padding: inherit;
+    align-content: center;
+}
+
+.div5 {
+    grid-column: span 5;
+    grid-row: span 1;
+    word-break: break-all;
+    padding: inherit;
+    align-content: center;
+}
+
+.settings {
+    display: none;
+    border-color: black;
+    border-width: 1px;
+    border-style: dotted;
+    border-radius: 5px;
+    padding: 2rem;
+}
+
+.settings-title {
+    font-size: xx-large;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.standard-address {
+    font-weight: bold;
+    font-style: italic;
+}
+
+#paymentIdASCII {
+    min-width: 300px;
+    min-height: 25px;
+}
+
+#paymentId {
+    min-width: 300px;
+    min-height: 25px;
+}
+
+.integrated-address {
+    display: block;
+    text-align: center;
+    word-break: break-word;
+    font-size: x-large;
+    font-weight: bold;
+    padding-top: 5rem;
+}
+
+#integrated-address {
+    display: block;
+    text-align: center;
+    word-break: break-word;
+    font-size: large;
+    font-weight: bold;
+}
+
+.information {
+    font-size: x-large;
+}
+
+.scan-qr-to-pay {
+    font-size: xx-large;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.paymentIdASCII {
+    font-weight: bold;
+    font-style: italic;
+}
+
+.paymentId {
+    font-weight: bold;
+    font-style: italic;
+}
+
+.generate{
+    display: block;
+    margin: auto;
+    padding: 25px;
+    font-size: xx-large;
+    background: azure;
+    border-radius: 5px;
+    font-style: italic;
+}
+
+#address {
+    min-width: 300px;
+    min-height: 25px;
+}
+
+.button-settings {
+    position: fixed;
+    width: 35px;
+    height: 35px;
+    bottom: 5px;
+    right: 5px;
+    background: azure;
+    text-align: center;
+    align-content: center;
+    border-radius: 5px;
+}
+
+.button-settings:hover {
+    background: rgba(255, 217, 1, 0.884);
+    transform: scale(1.1);
+}
+
+.button-settings img {
+    width: 80%;
+    height: 80%;
+    padding: 2px;
+}
+
+@media screen and (max-width: 768px) {
+    .parent {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+    }
+    .div1 {
+        grid-column: span 2;
+        grid-row: span 2;
+    }
+    .div2 {
+        grid-column: span 2;
+        grid-row: span 3;
+    }
+    .div3 {
+        grid-column: span 2;
+        grid-row: span 1;
+    }
+    .div4 {
+        grid-column: span 2;
+        grid-row: span 1;
+    }
+    .div5 {
+        grid-column: span 2;
+        grid-row: span 1;
+    }
+
+    .integrated-address {
+        display: block;
+        text-align: center;
+        word-break: break-word;
+        font-size: x-large;
+        font-weight: bold;
+        padding-top: 2rem;
+    }
+    
+}
